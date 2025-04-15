@@ -2,10 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { HomePage } from './pages/HomePage';
-import { GintarasPage } from './pages/GintarasPage';
-import { PikulasPage } from './pages/PikulasPage';
-import { MaraPage } from './pages/MaraPage';
-import { MedeinePage } from './pages/MedeinePage';
+import { ApartmentPage } from './pages/ApartmentPage';
 import { SuccessPage } from './pages/SuccessPage';
 import { FailPage } from './pages/FailPage';
 
@@ -15,10 +12,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/gintaras" element={<GintarasPage />} />
-        <Route path="/pikulas" element={<PikulasPage />} />
-        <Route path="/mara" element={<MaraPage />} />
-        <Route path="/medeine" element={<MedeinePage />} />
+        <Route path="/:id" element={<ApartmentPage />} />
         <Route path="/success" element={<SuccessPage />} />
         <Route path="/fail" element={<FailPage />} />
       </Routes>
